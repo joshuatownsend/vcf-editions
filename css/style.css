@@ -228,12 +228,14 @@ Main Components
 }
 .cd-features-list li.component {
   background-color: #00C1D5;
+  color: white;
 }
 .cd-features-list li.component span {
   background-color: #00C1D5;
 }
 .cd-features-list li.fcomponent {
   background-color: #00C1D5;
+  color: white;
 }
 .cd-features-list li.fcomponent span {
   display: inline-block;
