@@ -185,7 +185,7 @@ Main Components
 @media only screen and (min-width: 1170px) {
   .cd-products-columns {
     width: 2480px;
-    margin-left: 210px;
+    margin-left: 450px;
   }
 }
 
@@ -386,7 +386,7 @@ Main Components
 }
 @media only screen and (min-width: 1170px) {
   .cd-products-table .features .top-info {
-    width: 210px;
+    width: 450px;
   }
 }
 
@@ -545,7 +545,7 @@ Main Components
     transform: translateY(100px);
   }
   .cd-table-navigation a.prev {
-    left: 210px;
+    left: 450px;
     -webkit-transform: translateY(100px) translateX(15px) rotate(180deg);
     -moz-transform: translateY(100px) translateX(15px) rotate(180deg);
     -ms-transform: translateY(100px) translateX(15px) rotate(180deg);
