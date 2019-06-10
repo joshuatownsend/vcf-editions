@@ -367,7 +367,7 @@ Main Components
 @media only screen and (min-width: 1170px) {
   .cd-products-table .top-info {
     height: 280px;
-    width: 310px;
+    width: 450px;
   }
   .cd-products-table .top-info h3 {
     padding-top: 1.4em;
@@ -380,7 +380,7 @@ Main Components
 
 .cd-products-table .features .top-info {
   /* models */
-  width: 120px;
+  width: 450px;
   cursor: auto;
   background: #fafafa;
 }
