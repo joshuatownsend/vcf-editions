@@ -231,10 +231,16 @@ Main Components
   padding: 21px 0;
 }
 .cd-features-list li.component span {
+  background-color: red;
+}
+.cd-features-list li.fcomponent {
+
+}
+.cd-features-list li.fcomponent span {
   display: inline-block;
   height: 22px;
   width: 110px;
-  background: red;
+  background-color: red;
   color: red;
 }
 @media only screen and (min-width: 1170px) {
