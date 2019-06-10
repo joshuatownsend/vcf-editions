@@ -259,10 +259,10 @@ Main Components
 .features .cd-features-list li,
 .cd-products-table .features .top-info {
   /* fixed left column - items */
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   /* set line-height value equal to font-size of text inside product cells */
-  line-height: 14px;
+  line-height: 16px;
   padding: 22px 10px;
   text-align: left;
 }
