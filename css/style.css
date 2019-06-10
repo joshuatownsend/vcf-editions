@@ -324,6 +324,7 @@ Main Components
   display: block;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  margin: auto;
 }
 .cd-products-table .top-info h3, .cd-products-table .top-info img {
   -webkit-transition: -webkit-transform 0.3s;
