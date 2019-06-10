@@ -1,0 +1,18 @@
+// colors
+
+$color-1: #0091DA; // Ship Gray
+$color-2: #78BE20; // Spring Rain
+$color-3: #ffffff; // White
+$border: shade($color-3, 10%);
+
+// fonts 
+
+$primary-font: 'Metropolis', sans-serif; 
+
+// Table
+
+$products-number: 5;
+$products-column-width-mobile: 150px;
+$products-column-width: 310px;
+$features-column-width-mobile: 120px;
+$features-column-width: 210px;
