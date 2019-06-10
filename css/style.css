@@ -54,7 +54,7 @@ Main Components
   content: 'mobile';
 }
 .cd-products-comparison-table header {
-  padding: 0 5% 25px;
+  padding: 0 5% 22px;
 }
 .cd-products-comparison-table header::after {
   clear: both;
@@ -260,7 +260,7 @@ Main Components
   font-weight: bold;
   /* set line-height value equal to font-size of text inside product cells */
   line-height: 14px;
-  padding: 25px 10px;
+  padding: 22px 10px;
   text-align: left;
 }
 @media only screen and (min-width: 1170px) {
@@ -268,7 +268,7 @@ Main Components
   .cd-products-table .features .top-info {
     text-transform: uppercase;
     line-height: 16px;
-    padding: 25px 20px;
+    padding: 22px 20px;
     letter-spacing: 1px;
   }
 }
