@@ -303,7 +303,7 @@ Main Components
   content: '';
   position: absolute;
   left: 0;
-  top: 100%;
+  top: 50%;
   height: 4px;
   width: 100%;
   background-color: transparent;
@@ -314,7 +314,7 @@ Main Components
 .cd-products-table .top-info h3 {
   padding: 1.25em 0 0.625em;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .cd-products-table .top-info img {
   display: block;
