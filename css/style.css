@@ -229,6 +229,7 @@ Main Components
 .cd-features-list li.component {
   background-color: #00C1D5;
   color: white;
+  font-size: 1.6rem;
 }
 .cd-features-list li.component span {
   background-color: #00C1D5;
@@ -236,6 +237,7 @@ Main Components
 .cd-features-list li.fcomponent {
   background-color: #00C1D5;
   color: white;
+  font-size: 1.6rem;
 }
 .cd-features-list li.fcomponent span {
   display: inline-block;
@@ -243,6 +245,7 @@ Main Components
   width: 110px;
   background-color: #00C1D5;
   color: white;
+  font-size: 1.6rem;
 }
 @media only screen and (min-width: 1170px) {
   .cd-features-list li {
