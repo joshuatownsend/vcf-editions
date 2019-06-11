@@ -596,13 +596,13 @@ No JS
 /* Tooltip container */
 .tooltip {
   position: relative;
-  display: inline-table;
+  display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
   }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-  visibility: hidden;
+  visibility: visible;
   width: auto;
   background-color: black;
   color: #F2F2F2;
