@@ -159,7 +159,7 @@ Main Components
 }
 
 .cd-products-wrapper {
-  overflow-x: auto;
+  overflow-x: scroll;
   /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
   -webkit-overflow-scrolling: touch;
   border-style: solid;
@@ -173,7 +173,7 @@ Main Components
   width: 1200px;
   margin-left: 120px;
     /* truncate text with dots */
-  white-space: wrap;
+  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -308,7 +308,7 @@ Main Components
 
 .features .cd-features-list li {
   /* truncate text with dots */
-  white-space: wrap;
+  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
