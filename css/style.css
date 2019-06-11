@@ -596,10 +596,9 @@ No JS
 /* Tooltip container */
 .tooltip {
   position: relative;
-  display: inline-block;
+  display: block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  overflow: visible;
-}
+  }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
@@ -618,8 +617,7 @@ No JS
   opacity: 0;
   transition: opacity 1s;
   font-size: 12px;
-  overflow: visible;
-}
+  }
 
 .tooltip .tooltiptext::after {
   content: "";
@@ -630,12 +628,10 @@ No JS
   border-width: 5px;
   border-style: solid;
   border-color: transparent black transparent transparent;
-  overflow: visible;
-}
+  }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-  overflow: visible;
-}
+  }
