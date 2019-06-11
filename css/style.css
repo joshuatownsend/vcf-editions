@@ -630,7 +630,7 @@ No JS
 .tooltip .tooltiptext {
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 240px;
+  width: 120px;
   background-color: black;
   color: #fff;
   text-align: center;
@@ -646,7 +646,7 @@ No JS
 }
 
 .tooltip .tooltiptext::after {
-  content: " ";
+  content: "";
   position: absolute;
   bottom: 100%;  /* At the top of the tooltip */
   left: 50%;
