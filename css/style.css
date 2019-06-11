@@ -251,11 +251,37 @@ Main Components
   color: white;
   font-size: 1.6rem !important;
 }
+/* subcomponents vrealize suite */
+.cd-features-list li.subcomponent {
+  background-color: #F2F2F2;
+  color: black;
+  font-size: 1.6rem;
+}
+.cd-features-list li.subcomponent span {
+  background-color: #F2F2F2;
+}
+.cd-features-list li.subfcomponent {
+  background-color: #F2F2F2;
+  color: black;
+  font-size: 1.6rem !important;
+}
+.cd-features-list li.subfcomponent span {
+  display: inline-block;
+  height: 22px;
+  width: 550px;
+  background-color: #F2F2F2;
+  color: black;
+  font-size: 1.6rem !important;
+}
+/* more */
 @media only screen and (min-width: 1170px) {
   .cd-features-list li {
     font-size: 1.6rem;
   }
   .cd-features-list li.component {
+    padding: 22px 0;
+  }
+  .cd-features-list li.subcomponent {
     padding: 22px 0;
   }
 }
