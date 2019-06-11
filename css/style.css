@@ -311,7 +311,6 @@ Main Components
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  display: inline-flex;
 }
 
 .cd-products-table .top-info {
