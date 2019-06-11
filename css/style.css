@@ -173,7 +173,7 @@ Main Components
   width: 1200px;
   margin-left: 120px;
     /* truncate text with dots */
-  white-space: normal;
+  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -229,7 +229,7 @@ Main Components
   border-style: solid;
   border-top-width: 1px;
   border-right-width: 1px;
-  white-space: normal;
+  white-space: nowrap;
 }
 .cd-features-list li.component {
   background-color: #00C1D5;
@@ -309,7 +309,7 @@ Main Components
 
 .features .cd-features-list li {
   /* truncate text with dots */
-  white-space: normal;
+  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -538,7 +538,7 @@ Main Components
   /* replace text with image */
   overflow: hidden;
   text-indent: 100%;
-  white-space: normal;
+  white-space: nowrap;
   color: transparent;
   height: 60px;
   width: 40px;
