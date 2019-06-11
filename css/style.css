@@ -615,7 +615,8 @@ No JS
   left: 110%;
   opacity: 0;
   transition: opacity 1s;
-  font-size: 8px;
+  font-size: 10px;
+  overflow: visible;
 }
 
 .tooltip .tooltiptext::after {
