@@ -176,6 +176,10 @@ Main Components
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1em; /* a */
+  max-height: 2em; /* a x number of line to show (ex : 2 line)  */
 }
 .cd-products-columns::after {
   clear: both;
