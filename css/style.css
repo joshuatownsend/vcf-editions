@@ -596,7 +596,7 @@ No JS
 /* Tooltip container */
 .tooltip {
   position: relative;
-  display: block;
+  display: inline-table;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
   }
 
