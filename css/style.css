@@ -630,6 +630,7 @@ No JS
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 200px;
+  height: auto;
   background-color: black;
   color: #fff;
   text-align: center;
