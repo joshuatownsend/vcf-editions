@@ -639,6 +639,7 @@ No JS
   z-index: 1;
   top: -5px;
   left: 110%;
+  overflow: auto;
 }
 
 .tooltip .tooltiptext::after {
