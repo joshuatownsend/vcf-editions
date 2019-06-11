@@ -642,7 +642,7 @@ No JS
   left: 110%;
   white-space: normal;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   opacity: 0;
   transition: opacity 1s;
 }
