@@ -229,6 +229,7 @@ Main Components
   border-style: solid;
   border-top-width: 1px;
   border-right-width: 1px;
+  word-wrap:  break-word;
 }
 .cd-features-list li.component {
   background-color: #00C1D5;
