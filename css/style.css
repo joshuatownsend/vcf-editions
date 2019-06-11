@@ -613,8 +613,8 @@ No JS
   position: absolute;
   z-index: 1;
   top: 150px;
-  left: 0%;
-  margin-right: 100%;
+  left: 50%;
+  margin-left: -50%;
   opacity: 0;
   transition: opacity 1s;
   font-size: 12px;
