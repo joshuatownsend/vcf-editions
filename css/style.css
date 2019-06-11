@@ -641,7 +641,10 @@ No JS
   top: -5px;
   left: 110%;
   white-space: normal;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .tooltip .tooltiptext::after {
@@ -656,4 +659,5 @@ No JS
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  opacity: 1;
 }
