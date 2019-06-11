@@ -628,7 +628,6 @@ No JS
 }
 
 .tooltip .tooltiptext {
-.tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -638,25 +637,20 @@ No JS
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: 150%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 1s;
+  top: -5px;
+  left: 110%;
 }
 
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
-  bottom: 100%;  /* At the top of the tooltip */
-  left: 50%;
-  margin-left: -5px;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent black transparent;
+  border-color: transparent black transparent transparent;
 }
-
 .tooltip:hover .tooltiptext {
   visibility: visible;
-  opacity: 1;
 }
