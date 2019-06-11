@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #404042;
   background-color: #ffffff;
@@ -108,7 +108,7 @@ Main Components
     font-size: 2.4rem;
   }
   .cd-products-comparison-table .reset, .cd-products-comparison-table .filter {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .cd-products-comparison-table .filter {
     padding: .6em 2em;
@@ -234,7 +234,7 @@ Main Components
 .cd-features-list li.component {
   background-color: #00C1D5;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .cd-features-list li.component span {
   background-color: #00C1D5;
@@ -242,7 +242,7 @@ Main Components
 .cd-features-list li.fcomponent {
   background-color: #00C1D5;
   color: white;
-  font-size: 1.6rem !important;
+  font-size: 1.2rem !important;
 }
 .cd-features-list li.fcomponent span {
   display: inline-block;
@@ -250,13 +250,13 @@ Main Components
   width: 800px;
   background-color: #00C1D5;
   color: white;
-  font-size: 1.6rem !important;
+  font-size: 1.2rem !important;
 }
 /* subcomponents vrealize suite */
 .cd-features-list li.subcomponent {
   background-color: #F2F2F2;
   color: black;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .cd-features-list li.subcomponent span {
   background-color: #F2F2F2;
@@ -272,12 +272,12 @@ Main Components
   width: 800px;
   background-color: #F2F2F2;
   color: black;
-  font-size: 1.6rem !important;
+  font-size: 1.2rem !important;
 }
 /* more */
 @media only screen and (min-width: 1170px) {
   .cd-features-list li {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   .cd-features-list li.component {
     padding: 22px 0;
@@ -290,7 +290,7 @@ Main Components
 .features .cd-features-list li,
 .cd-products-table .features .top-info {
   /* fixed left column - items */
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   /* set line-height value equal to font-size of text inside product cells */
   line-height: 16px;
@@ -345,7 +345,7 @@ Main Components
 .cd-products-table .top-info h3 {
   padding: 1.25em 0 0.625em;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .cd-products-table .top-info img {
   display: block;
@@ -399,7 +399,7 @@ Main Components
   }
   .cd-products-table .top-info h3 {
     padding-top: 1.4em;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   .cd-products-table .top-info .check {
     margin-bottom: 1.5em;
