@@ -604,8 +604,8 @@ No JS
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: #F2F2F2;
-  color: #464547;
+  background-color: #black;
+  color: #F2F2F2;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -615,6 +615,7 @@ No JS
   left: 110%;
   opacity: 0;
   transition: opacity 1s;
+  font-size: 8px;
 }
 
 .tooltip .tooltiptext::after {
