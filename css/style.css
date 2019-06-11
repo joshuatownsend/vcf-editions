@@ -127,7 +127,7 @@ Main Components
   z-index: 1;
   top: 0;
   left: 0;
-  width: 800px;
+  width: 600px;
   border-style: solid;
   border-color: #e6e6e6;
   border-top-width: 1px;
@@ -150,7 +150,7 @@ Main Components
 }
 @media only screen and (min-width: 1170px) {
   .cd-products-table .features {
-    width: 800px;
+    width: 600px;
   }
 }
 
@@ -185,14 +185,14 @@ Main Components
 @media only screen and (min-width: 1170px) {
   .cd-products-columns {
     width: 2480px;
-    margin-left: 800px;
+    margin-left: 600px;
   }
 }
 
 .cd-products-columns .product {
   position: relative;
   float: left;
-  width: 800px;
+  width: 600px;
   text-align: center;
   -webkit-transition: opacity 0.3s, visibility 0.3s, -webkit-transform 0.3s;
   -moz-transition: opacity 0.3s, visibility 0.3s, -moz-transform 0.3s;
@@ -217,7 +217,7 @@ Main Components
 }
 @media only screen and (min-width: 1170px) {
   .cd-products-columns .product {
-    width: 800px;
+    width: 600px;
   }
 }
 
@@ -247,7 +247,7 @@ Main Components
 .cd-features-list li.fcomponent span {
   display: inline-block;
   height: 22px;
-  width: 800px;
+  width: 600px;
   background-color: #00C1D5;
   color: white;
   font-size: 1.6rem !important;
@@ -269,7 +269,7 @@ Main Components
 .cd-features-list li.subfcomponent span {
   display: inline-block;
   height: 22px;
-  width: 800px;
+  width: 600px;
   background-color: #F2F2F2;
   color: black;
   font-size: 1.6rem !important;
@@ -317,7 +317,7 @@ Main Components
 .cd-products-table .top-info {
   position: relative;
   height: 177px;
-  width: 800px;
+  width: 600px;
   text-align: center;
   padding: 1.25em 2.5em;
   border-color: #e6e6e6;
@@ -395,7 +395,7 @@ Main Components
 @media only screen and (min-width: 1170px) {
   .cd-products-table .top-info {
     height: 320px;
-    width: 800px;
+    width: 600px;
   }
   .cd-products-table .top-info h3 {
     padding-top: 1.4em;
@@ -408,13 +408,13 @@ Main Components
 
 .cd-products-table .features .top-info {
   /* models */
-  width: 800px;
+  width: 600px;
   cursor: auto;
   background: #fafafa;
 }
 @media only screen and (min-width: 1170px) {
   .cd-products-table .features .top-info {
-    width: 800px;
+    width: 600px;
   }
 }
 
@@ -573,7 +573,7 @@ Main Components
     transform: translateY(100px);
   }
   .cd-table-navigation a.prev {
-    left: 800px;
+    left: 600px;
     -webkit-transform: translateY(100px) translateX(15px) rotate(180deg);
     -moz-transform: translateY(100px) translateX(15px) rotate(180deg);
     -ms-transform: translateY(100px) translateX(15px) rotate(180deg);
