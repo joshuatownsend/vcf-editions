@@ -173,7 +173,7 @@ Main Components
   width: 1200px;
   margin-left: 120px;
     /* truncate text with dots */
-  white-space: nowrap;
+  white-space: wrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -308,7 +308,7 @@ Main Components
 
 .features .cd-features-list li {
   /* truncate text with dots */
-  white-space: nowrap;
+  white-space: wrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
