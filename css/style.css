@@ -643,6 +643,7 @@ No JS
   margin-left: -60px;
   opacity: 0;
   transition: opacity 1s;
+  white-space: normal;
 }
 
 .tooltip .tooltiptext::after {
