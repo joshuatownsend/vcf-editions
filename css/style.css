@@ -13,7 +13,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-size: 2.5vw; 
   font-family: "Source Sans Pro", sans-serif;
   color: #404042;
   background-color: #ffffff;
@@ -71,7 +70,6 @@ Main Components
 }
 .cd-products-comparison-table .reset, .cd-products-comparison-table .filter {
   font-size: 1.4rem;
-  font-size: 2.5vw; 
 }
 .cd-products-comparison-table .reset {
   color: #404042;
@@ -225,7 +223,6 @@ Main Components
 
 .cd-features-list li {
   font-size: 1.2rem;
-  font-size: 2.5vw; 
   font-weight: bold;
   padding: 22.5px 40px;
   border-color: #e6e6e6;
@@ -237,7 +234,6 @@ Main Components
   background-color: #00C1D5;
   color: white;
   font-size: 1.6rem;
-  font-size: 2.5vw; 
 }
 .cd-features-list li.component span {
   background-color: #00C1D5;
@@ -281,7 +277,6 @@ Main Components
 @media only screen and (min-width: 1170px) {
   .cd-features-list li {
     font-size: 1.6rem;
-	font-size: 2.5vw; 
   }
   .cd-features-list li.component {
     padding: 22px 0;
