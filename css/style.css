@@ -293,7 +293,7 @@ Main Components
   font-size: 1.4rem;
   font-weight: bold;
   /* set line-height value equal to font-size of text inside product cells */
-  line-height: 16px;
+  line-height: 32px;
   padding: 22px 10px;
   text-align: left;
 }
@@ -301,7 +301,7 @@ Main Components
   .features .cd-features-list li,
   .cd-products-table .features .top-info {
    /* text-transform: uppercase; */
-    line-height: 16px;
+    line-height: 32px;
     padding: 22px 20px;
     letter-spacing: 1px;
   }
