@@ -640,6 +640,7 @@ No JS
   z-index: 1;
   top: -5px;
   left: 110%;
+  white-space: normal;
   overflow: auto;
 }
 
