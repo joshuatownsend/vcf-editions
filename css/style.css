@@ -334,7 +334,7 @@ Main Components
   content: '';
   position: absolute;
   left: 0;
-  top: 70%;
+  top: 100%;
   height: 4px;
   width: 100%;
   background-color: transparent;
