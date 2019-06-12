@@ -377,7 +377,7 @@ Main Components
 .cd-products-table .top-info .check::before {
   /* green circle dot */
   border-radius: 50%;
-  border: 1px solid #e6e6e6;
+  border: 1.5px solid #78BE20;
   background: #ffffff;
   -webkit-transition: background-color 0.3s, -webkit-transform 0.3s, border-color 0.3s;
   -moz-transition: background-color 0.3s, -moz-transform 0.3s, border-color 0.3s;
