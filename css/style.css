@@ -280,10 +280,10 @@ Main Components
     font-size: 1.5rem;
   }
   .cd-features-list li.component {
-    padding: 22px 0;
+    padding: 22.4px 0;
   }
   .cd-features-list li.subcomponent {
-    padding: 22px 0;
+    padding: 22.4px 0;
   }
 }
 
@@ -294,7 +294,7 @@ Main Components
   font-weight: bold;
   /* set line-height value equal to font-size of text inside product cells */
   line-height: 14px;
-  padding: 21.2px 10px;
+  padding: 22.4px 10px;
   text-align: left;
 }
 @media only screen and (min-width: 1170px) {
@@ -302,7 +302,7 @@ Main Components
   .cd-products-table .features .top-info {
    /* text-transform: uppercase; */
     line-height: 14px;
-    padding: 21.2px 20px;
+    padding: 22.4px 20px;
     letter-spacing: 1px;
   }
 }
