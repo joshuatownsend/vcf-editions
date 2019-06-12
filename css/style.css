@@ -316,7 +316,7 @@ Main Components
 
 .cd-products-table .top-info {
   position: relative;
-  height: 180px;
+  height: 250px;
   width: 350px;
   text-align: center;
   padding: 1.25em 2.5em;
@@ -394,7 +394,7 @@ Main Components
 }
 @media only screen and (min-width: 1170px) {
   .cd-products-table .top-info {
-    height: 180px;
+    height: 250px;
     width: 350px;
   }
   .cd-products-table .top-info h3 {
@@ -487,12 +487,12 @@ Main Components
   .cd-products-table.top-scrolling .cd-products-columns > li,
   .cd-products-table.top-fixed .features,
   .cd-products-table.top-scrolling .features {
-    padding-top: 180px;
+    padding-top: 250px;
   }
 
   .cd-products-table.top-fixed .top-info,
   .cd-products-table.top-scrolling .top-info {
-    height: 180px;
+    height: 250px;
     position: fixed;
     top: 0;
   }
