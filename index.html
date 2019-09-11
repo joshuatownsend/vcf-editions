@@ -1,1024 +1,146 @@
-<!doctype html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Password Protected</title>
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-	<link rel="icon" href="https://joshuatownsend.github.io/vcf-editions/favicon.ico">
-  	
-	<title>Compare VMware Cloud Foundation Editions</title>
-</head>
-<body>
-	<section class="cd-intro">
-		<h1>Compare VMware Cloud Foundation Editions</h1>
-	</section> <!-- .cd-intro -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow">
 
-	<section class="cd-products-comparison-table">
-		<header>
-			<h2></h2>
+        <style>
+            *,
+            *:after,
+            *:before {
+                box-sizing: border-box;
+            }
+            body,
+            html {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                background: #f2f2f2;
+                color: #2D3737;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100%;
+            }
 
-			<div class="actions">
-				<a href="#0" class="reset">Reset</a>
-				<a href="#0" class="filter">Filter</a>
-			</div>
-		</header>
+            .protected {
+                background: #fff;
+                -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                border-radius: 3px;
+                min-width: 500px;
 
-		<div class="cd-products-table">
-			<div class="features">
-				<div class="top-info">Editions to Compare</div>
-				<ul class="cd-features-list">
-					<li class="component">vSphere Edition</li>
-					<li><div class="tooltip"><span style="cursor: help;">vMotion®</span><span class="tooltiptext">Enables live migration of virtual machines Cross-vSwitch, Cross v-Center, Long Distance, and Cross-Cloud with no disruption to users or loss of service, eliminating the need to schedule application downtime for planned server maintenance.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Storage vMotion®</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Fault Tolerance</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vShield Endpoint™</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vSphere Replication™</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Support for 4K Native Storage</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vSphere Quick Boot</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vSphere Single Reboot</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vCenter® High Availability</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vCenter Backup and Restore</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vCenter Server Appliance™ Migration Tool</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vCenter Server Appliance Converge Tool</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">TPM 2.0 Support & Virtual TPM</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">FIPS 140-2 Compliance & TLS 1.2 Support as Default</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Cross vCenter Encrypted vMotion</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Virtual Machine Encryption</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Automated Discovery of Application Assets, Intent, and Communication</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Contextual Intelligence of Application State</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Orchestrated or Automated Responses to Security Threats</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Integration with Third-Party Security Operations Tools</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vCenter Hybrid Linked Mode</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Cross vCenter Mixed Version Provisioning</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Hot and Cold Migration to the Cloud</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Per VM Enhanced vMotion Compatibility</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Virtual Volumes™</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Storage Policy-Based Management</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Distributed Resource Scheduler™ (DRS), Distributed Power Management™ (DPM)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Storage DRS™</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Storage I/O Control</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Network I/O Control</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Single Root I/O Virtualization (SR-IOV) Support</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vSphere Persistent Memory</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">NVIDIA GRID vGPU</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Proactive HA</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Content Library</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vCenter Server Appliance enhanced linked mode with embedded Platform Services Controller</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Storage APIs for Array Integration, Multipathing</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Distributed Switch™</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Host Profiles and Auto Deploy™</span><span class="tooltiptext">…</span></div></li>
-					<li class="component">vSAN Edition</li>
-					<li><div class="tooltip"><span style="cursor: help;">Storage Policy-Based Management</span><span class="tooltiptext">Allow common management across storage tiers and dynamic SLA automation via policy-driven control plane. Policies can be applied on a per-VM level and adjusted on the fly. No LUNs or RAID configurations.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vSAN Snapshots & Clones</span><span class="tooltiptext">Highly efficient VM-centric snapshots and clones with support for up to 32 snapshots or clones per VM and 16K snapshots or clones per cluster, leveraging the unique vSAN File System.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Rack Awareness</span><span class="tooltiptext">vSAN fault domains provide the ability to tolerate rack failures in addition to disk, network, and host failures.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Replication (5 min RPO)</span><span class="tooltiptext">Use vSphere replication to asynchronously replicate VMs across sites based on configurable schedules of up to 5 minutes RPO (unique to vSAN).</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Software Checksum</span><span class="tooltiptext">End-to-end software checksum of data enables automatic detection and resolution of silent disk errors and ensures data integrity.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">All-Flash Support</span><span class="tooltiptext">Create an all-flash architecture delivering consistent, predictable performance with up to 100K IOPS/Host and sub-millisecond response times.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Block Access (iSCSI)</span><span class="tooltiptext">Expand to new, non-virtualized workloads with iSCSI access.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">QoS - IOPS Limit</span><span class="tooltiptext">Limit IOPS consumption per VM to better manage performance SLAs for different workloads. Eliminates “noisy neighbor” issues.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Inline Deduplication & Compression (All-Flash Only)</span><span class="tooltiptext">Optimized for all-flash systems. Reduce space usage by up to 7x, providing attractive $/GB for a hyperconverged all-flash system.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Erasure Coding - RAID-5/6 (All-Flash Only)</span><span class="tooltiptext">Single parity protection (RAID-5) from a single failure and double parity protection (RAID-6) from two simultaneous failures. Dynamically change between RAID protection levels through policies and increase storage utilization by up to 2x.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vRealize Operations within vCenter</span><span class="tooltiptext">Single pane of glass to monitor and control HCI environment.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Stretched Cluster with Local Failure Protection</span><span class="tooltiptext">Provides protection against both site failures and local component failures. vSAN ensures high performance by utilizing the local site copy.</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Data-at-Rest Encryption</span><span class="tooltiptext">Cluster-level encryption for data stored on any persistent media.</span></div></li>
-					<li class="component">NSX Datacenter Edition</li>
-					<li><div class="tooltip"><span style="cursor: help;">Distributed Switching and Routing</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">NSX Edge™ Firewall</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">NSX Edge NAT</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">SW L2 Bridging to Physical Environments</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Dynamic Routing with ECMP (Active-Active)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Integration with Cloud Management Platforms</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Distributed Firewalling for VMs and Workloads Running on Bare Metal</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">VPN (L2 and L3)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Integration with NSX Cloud4 for AWS and Azure Support</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">NSX Edge Load Balancing</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Integration with Distributed Firewall (Active Directory, VMware AirWatch®, and Third-Party Service Insertion)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Container Networking and Security</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Multisite Networking and Security</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">IPv6</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Context-Aware Micro-Segmentation (Application Identification, RDSH)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">URL Filtering</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">NSX Hybrid Connect Advanced (HCX)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">- Large-Scale Workload Migration with HXC</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">- WAN Optimization for Workload Migration with HCX</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">- Traffic and Load Management Across Multiple Links with HCX</span><span class="tooltiptext">…</span></div></li>
-					<li class="component">vRealize Suite Edition</li>
-					<li><div class="tooltip"><span style="cursor: help;">vRealize Suite Lifecycle Manager</span><span class="tooltiptext">…</span></div></li>
-					<li class="subcomponent">vRealize Operations Edition</li>
-					<li><div class="tooltip"><span style="cursor: help;">Performance monitoring and analytics</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Capacity management and planning</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vSphere security and compliance</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Remediation and troubleshooting</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Workload balancing based on business/operational intent</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Dashboards and reporting</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Log integration</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Private cloud costing</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">OS monitoring</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Application, middleware and database monitoring</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Management packs available</span><span class="tooltiptext">…</span></div></li>				
-					<li class="subcomponent">vRealize Business for Cloud Edition</li>
-					<li><div class="tooltip"><span style="cursor: help;">Automatic private cloud metering, costing, and pricing</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Private cloud consumption analysis</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Private cloud and public cloud cost comparison</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Out-of-the-box hybrid cloud assessment (Comprehensive cloud costing and business assessment)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Automatic reporting, custom reporting and API for data extraction</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Data center optimization (Integrated with vRealize Operations)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Identifying and quantifying private cloud reclamation opportunities (Integrated with vRealize Operations)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Procurement planning</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Public cloud costing, consumption analysis, and pricing</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Role-based showback</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Automatic service catalog pricing (Integrated with vRealize Automation)</span><span class="tooltiptext">…</span></div></li>
-					<li class="subcomponent">vRealize Automation Edition</li>
-					<li><div class="tooltip"><span style="cursor: help;">Automated self-service with unified service catalog and API functions</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Multi-vendor hypervisor, physical endpoint and public cloud support</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Frictionless governance and compliance policies</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Resource lifecycle management</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Resource right-sizing and reclamation</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Extensibility options for ecosystem partner tools integration</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Marketplace of vendor and partner provided blueprints, plug-ins and other contents</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Automatic service catalog pricing (Integrated with vRealize Automation and vRealize Business for Cloud)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Infrastructure as a Service (IaaS)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Anything as a Service (Xaas)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Application stack provisioning and management</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Out-of-the-box integration with Configuration Management tools</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Container management</span><span class="tooltiptext">…</span></div></li>
-					<li class="subcomponent">vRealize Log Insight Edition</li>
-					<li><div class="tooltip"><span style="cursor: help;">Dashboards</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Custom Dashboards</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Interactive Analytics</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vSphere Integration (Collect from vCenter, ESXi)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">vRealize Operations Integration</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Alerting</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Machine Learning/Analytics</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Active Directory Integration</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Role-based Access Control</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Query API</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Customer Experience Improvement Consent</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Agents</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Clustering</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">High Availability</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Event Forwarding</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Archiving</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Customizable Data Retention</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Content Pack Marketplace</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">VMware Content Pack</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Import Custom Content Packs</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">3rd Party Content Packs</span><span class="tooltiptext">…</span></div></li>
-					<li class="component">vRealize Network Insight Edition</li>
-					<li><div class="tooltip"><span style="cursor: help;">Virtual Flows (VDS IPFIX, V2V, V2P)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">NSX Firewall M-Seg Planning and Operations (NSX IPFIX)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">NSX Day 2 Ops (Topology View, Best Practice Checklist, NSX Edge™ Health Dashboard)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Visibility Across Third-Party Switches, Routers, Firewalls, and Load Balancers</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Public API</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">NSX PCI Compliance Dashboard</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">ServiceNow Integration for App Discovery</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Security Planning and Visibility for VMware Cloud on AWS</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Security Planning and Visibility for AWS</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Hybrid Cloud Troubleshooting Across SDDC, AWS, and VMware Cloud</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Physical Flows (NetFlow v7 and v9, and sFlow)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Visibility Across VMware Enterprise PKS and Kubernetes</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Network and Security Analytics (Top Talkers, Outlier Detection, etc.)</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Configurable and Extended Retention Period for Data</span><span class="tooltiptext">…</span></div></li>
-					<li><div class="tooltip"><span style="cursor: help;">Cisco ACI, BGP-EVPN Underlay Visibility</span><span class="tooltiptext">…</span></div></li>
-				</ul>
-			</div> <!-- .features -->
-			
-			<div class="cd-products-wrapper">
-				<ul class="cd-products-columns">
-					<li class="product">
-						<div class="top-info">
-							<div class="check"></div>
-							<img src="img/product.png" alt="product image">
-							<h3>Basic Edition</h3>
-						</div> <!-- .top-info -->
+            }
+            .protected__content {
+                padding: 24px 28px;
+            }
+            .protected__content__heading {
+                font-size: 16px;
+                font-weight: 500;
+                margin: 0 0 12px;
+                line-height: 1;
+            }
+            .protected__alert {
+                display: none;
+                border-bottom: 1px solid transparent;
+                border-radius: 3px 3px 0 0;
+                padding: 12px 14px;
+                color: #a94442;
+                background-color: #f2dede;
+                border-color: #ebccd1;
+            }
+            .protected__content__input {
+                display: block;
+                border: solid 1px #ccc;
+                padding: 12px 14px;
+                -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+                font-size: 16px;
+                width: 100%;
+                border-radius: 3px;
 
-						<ul class="cd-features-list">
-							<li class="component">VMware vSphere® Enterprise Plus™</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="component">VMware vSAN Advanced</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="component">VMware NSX Datacenter Pro</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="component">﻿</li>
-							<li>﻿</li>
-							<li class="subcomponent">﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="subcomponent">﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="subcomponent">﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="subcomponent">﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="component">﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-						</ul>
-					</li> <!-- .product -->
+                margin-bottom: 12px;
+            }
+            .protected__content__input:focus {
+                outline: none;
+                border-color: #228843;
+            }
+            .protected__content__btn {
+                background-color: #228843;
+                border-radius: 3px;
+                cursor: pointer;
+                border: none;
+                color: #fff;
+                padding: 12px 14px;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
 
-					<li class="product">
-						<div class="top-info">
-							<div class="check"></div>
-							<img src="img/product.png" alt="product image">
-							<h3>Standard Edition</h3>
-						</div> <!-- .top-info -->
+            }
+            .protected__content__btn:hover {
+                background-color: #1C6D36;
+            }
 
-						<ul class="cd-features-list">
-							<li class="component">VMware vSphere® Enterprise Plus™</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="component">VMware vSAN Advanced</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="component">VMware NSX Datacenter Advanced</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="component">vRealize Suite Standard</li>
-							<li>●</li>
-							<li class="subcomponent">vRealize Operations Advanced</li>
-							<li><div class="tooltip"><span style="cursor: help;">○</span><span class="tooltiptext">Entire SDDC, VMware Cloud on AWS and VCPP based hybrid clouds</span></div></li>
-							<li><div class="tooltip"><span style="cursor: help;">○</span><span class="tooltiptext">Integrated capacity and costing for entire SDDC; scenario planning to add workloads and procure hardware; multi-cloud migration</span></div></li>
-							<li>●</li>
-							<li><div class="tooltip"><span style="cursor: help;">○</span><span class="tooltiptext">Entire SDDC, VMware Cloud on AWS and VCPP based hybrid clouds</span></div></li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Automated and schedulable</span></div></li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li><div class="tooltip"><span style="cursor: help;">○</span><span class="tooltiptext">50+ for compute, storage, networking, hyperconverged and other hypervisors</span></div></li>
-							<li class="subcomponent">﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="subcomponent">﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="subcomponent">vRealize Log Insight</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="component">vRealize Network Insight Advanced</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-						</ul>
-					</li> <!-- .product -->
+        </style>
 
-					<li class="product">
-						<div class="top-info">
-							<div class="check"></div>
-							<img src="img/product.png" alt="product image">
-							<h3>Advanced Editon</h3>
-						</div> <!-- .top-info -->
+    </head>
 
-						<ul class="cd-features-list">
-							<li class="component">VMware vSphere® Enterprise Plus™</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="component">VMware vSAN Advanced</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="component">VMware NSX Datacenter Advanced</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li class="component">vRealize Suite Enterprise</li>
-							<li>●</li>
-							<li class="subcomponent">vRealize Operations Enterprise</li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Entire SDDC, VMware Cloud on AWS, hybrid clouds and multicloud</span></div></li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Integrated capacity and costing for entire SDDC; scenario planning to add workloads and procure hardware; multi-cloud migration</span></div></li>
-							<li>●</li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Entire SDDC, VMware cloud on AWS, hybrid clouds, multicloud, containers and applications</span></div></li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Automated and schedulable</span></div></li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Out-of-the-box AND customizable/shareable dashboards, reports and views</span></div></li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">75+ for compute, storage, networking, converged/hyperconverged, other hypervisors, container, cloud, connectors, database, big data, and applications</span></div></li>
-							<li class="subcomponent">vRealize Business for Cloud Advanced</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="subcomponent">vRealize Automation Enterprise</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="subcomponent">vRealize Log Insight</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="component">vRealize Network Insight Advanced</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>							
-						</ul>
-					</li> <!-- .product -->
+    <body>
 
-					<li class="product">
-						<div class="top-info">
-							<div class="check"></div>
-							<img src="img/product.png" alt="product image">
-							<h3>Enterprise Edition</h3>
-						</div> <!-- .top-info -->
+        <div class="protected">
+            <div class="protected__alert" data-id="alert">You entered the wrong password</div>
+            <div class="protected__content">
+                <h1 class="protected__content__heading">You need a password to continue</h1>
+                <input class="protected__content__input" data-id="password" type="password" placeholder="password"/>
+                <button data-id="button" type="button" class="protected__content__btn">Continue</button>
+            </div>
+        </div>
 
-						<ul class="cd-features-list">
-							<li class="component">VMware vSphere® Enterprise Plus™</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>﻿</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="component">VMware vSAN Enterprise</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●﻿</li>
-							<li>●﻿</li>
-							<li class="component">VMware NSX Datacenter Enterprise Plus</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="component">vRealize Suite Enterprise</li>	
-							<li>●</li>
-							<li class="subcomponent">vRealize Operations Enterprise</li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Entire SDDC, VMware Cloud on AWS, hybrid clouds and multicloud</span></div></li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Integrated capacity and costing for entire SDDC; scenario planning to add workloads and procure hardware; multi-cloud migration</span></div></li>
-							<li>●</li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Entire SDDC, VMware cloud on AWS, hybrid clouds, multicloud, containers and applications</span></div></li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Automated and schedulable</span></div></li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Out-of-the-box AND customizable/shareable dashboards, reports and views</span></div></li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">75+ for compute, storage, networking, converged/hyperconverged, other hypervisors, container, cloud, connectors, database, big data, and applications</span></div></li>
-							<li class="subcomponent">vRealize Business for Cloud Advanced</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="subcomponent">vRealize Automation Enterprise</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="subcomponent">vRealize Log Insight</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="component">vRealize Network Insight Enterprise</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>						
-						</ul>
-					</li> <!-- .product -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
+        <script type="text/javascript">
+            "use strict"
+            var button = document.querySelectorAll('[data-id="button"]')
+            var password = document.querySelectorAll('[data-id="password"]')
 
-					<li class="product">
-						<div class="top-info">
-							<div class="check"></div>
-							<img src="img/product.png" alt="product image" align="center">
-							<h3>Platinum Edition</h3>
-						</div> <!-- .top-info -->
+            function login(secret) {
+                var hash = sha1(secret)
+                var url = hash + "/index.html"
+                var alert = document.querySelectorAll('[data-id="alert"]')
 
-						<ul class="cd-features-list">
-							<li class="component">VMware vSphere® Platinum™</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="component">VMware vSAN Enterprise</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●﻿</li>
-							<li>●﻿</li>
-							<li class="component">VMware NSX Datacenter Enterprise Plus</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="component">vRealize Suite Enterprise</li>
-							<li>●</li>
-							<li class="subcomponent">vRealize Operations Enterprise</li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Entire SDDC, VMware Cloud on AWS, hybrid clouds and multicloud</span></div></li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Integrated capacity and costing for entire SDDC; scenario planning to add workloads and procure hardware; multi-cloud migration</span></div></li>
-							<li>●</li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Entire SDDC, VMware cloud on AWS, hybrid clouds, multicloud, containers and applications</span></div></li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Automated and schedulable</span></div></li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">Out-of-the-box AND customizable/shareable dashboards, reports and views</span></div></li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li><div class="tooltip"><span style="cursor: help;">●</span><span class="tooltiptext">75+ for compute, storage, networking, converged/hyperconverged, other hypervisors, container, cloud, connectors, database, big data, and applications</span></div></li>
-							<li class="subcomponent">vRealize Business for Cloud Advanced</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="subcomponent">vRealize Automation Enterprise</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="subcomponent">vRealize Log Insight</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li class="component">vRealize Network Insight Enterprise</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-							<li>●</li>
-						</ul>
-					</li> <!-- .product -->
+                var request = new XMLHttpRequest()
+                request.open('GET', url, true)
 
-				</ul> <!-- .cd-products-columns -->
-			</div> <!-- .cd-products-wrapper -->
-			
-			<ul class="cd-table-navigation">
-				<li><a href="#0" class="prev inactive">Prev</a></li>
-				<li><a href="#0" class="next">Next</a></li>
-			</ul>
-		</div> <!-- .cd-products-table -->
-	</section> <!-- .cd-products-comparison-table -->
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-</body>
+                request.onload = function () {
+                    if (request.status >= 200 && request.status < 400) {
+                        window.location = url
+                    } else {
+                        parent.location.hash = hash
+                        alert[0].style.display = 'block'
+                        password[0].setAttribute('placeholder', 'Incorrect password')
+                        password[0].value = ''
+                    }
+                }
+                request.onerror = function () {
+                    parent.location.hash = hash
+                    alert[0].style.display = 'block'
+                    password[0].setAttribute('placeholder', 'Incorrect password')
+                    password[0].value = ''
+                }
+                request.send()
+            }
+
+            button[0].addEventListener("click", function () {
+                login(password[0].value)
+            })
+
+            document.onkeydown = function (e) {
+                e = e || window.event
+                if (e.keyCode == 13) {
+                    login(password[0].value)
+                }
+            }
+        </script>
+    </body>
 </html>
